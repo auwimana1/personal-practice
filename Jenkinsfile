@@ -15,7 +15,7 @@ pipeline{
     }
 
     stages{
-        stage(""){
+        stage("build image and push to ecr"){
             steps{
                 script{
 
@@ -24,7 +24,7 @@ pipeline{
         }
         stage(""){
             steps{
-                
+
             }
         }
     }
