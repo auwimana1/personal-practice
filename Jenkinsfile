@@ -2,7 +2,7 @@ pipeline{
     agent any
 
     parameters{
-        (name: 'Adelina' , defaultValue: '1.0.0')
+        string (name: 'Adelina' , defaultValue: '1.0.0')
     }
 
 
