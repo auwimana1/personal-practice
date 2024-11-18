@@ -24,7 +24,6 @@ pipeline{
         stage("update image to ecs"){
             steps{
                 sh "aws ecs update-service --cluster Adelina-Cluster --service  ade-family --force-new-deployment"
-"
             }
         }
         
