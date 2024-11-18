@@ -7,7 +7,7 @@ pipeline{
 
 
     stages{
-        stage("build image and push to ecr"){
+        stage("build the image and push to ecr"){
             steps{
                 script{
                     // This step should not normally be used in your script. Consult the inline help for details.
@@ -21,7 +21,7 @@ pipeline{
                 }
             }
         }
-        stage("update image to ecs"){
+        stage("update the image to ecs"){
             steps{
                 sh "aws ecs update-service --cluster Adelina-Cluster --service  ade-family --force-new-deployment"
             }
